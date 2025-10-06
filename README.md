@@ -1,15 +1,18 @@
 # Singlestage Login Example
 Example login page for a Leptos web app using [Singlestage UI](https://singlestage.doordesk.net/)
+# What it looks like
+![Login page](./site.png)
 
+# Development
 This example uses Tailwind's CDN to load Tailwind for Singlestage.
 Ex.
 ```
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser"></script>
 ```
 
-# Development
+Change the theme using Singlestage's `ThemeProvider`.
 
-Run
+To run
 ```
 trunk serve --open
 ```

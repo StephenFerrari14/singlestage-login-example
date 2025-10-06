@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # for committing to gh-pages branch.
+  # contents: write # for committing to gh-pages branch.
+  contents: read
   pages: write
   id-token: write
 
@@ -62,10 +63,7 @@ jobs:
       # Deploy with Github Static Pages
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          enablement: true
-          # token:
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
